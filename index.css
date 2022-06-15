@@ -1,0 +1,77 @@
+body
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.youve-reached
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 6px 6px 0 red;
+    font-size: 75px;
+}
+
+.latest-marker
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 red;
+    font-size: 40px;
+}
+
+.video-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.youtube-video
+{
+    flex-grow: 1;
+    order: 1;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.source-mapping
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 4px 4px 0 red;
+    font-size: 50px;
+}
+
+.what-is
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 red;
+    font-size: 20px;
+}
+
+.source-mapping-link
+{
+    color: white;
+    text-decoration: none;
+}
+
+.source-mapping-link:hover
+{
+    text-decoration: underline;
+}
