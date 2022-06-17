@@ -37,15 +37,18 @@ body
 .youtube-video
 {
     flex-grow: 1;
-    order: 1;
 
     margin-right: 10px;
     margin-left: 10px;
 }
 
+.source-maps
+{
+    margin-top: 75px;
+}
+
 .source-mapping
 {
-    margin-top: 10px;
     margin-bottom: 10px;
 
     font-family: Verdana;
@@ -57,7 +60,7 @@ body
 .what-is
 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     font-family: Verdana;
     font-weight: bold;
@@ -74,4 +77,87 @@ body
 .source-mapping-link:hover
 {
     text-decoration: underline;
+}
+
+.shepherdoffire
+{
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px; margin-right: 8px;
+    margin-bottom: 16px;
+
+    border: 1px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-left: 0px;
+    border-right: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.shepherdoffire-image-container
+{ 
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.shepherdoffire-image
+{
+    width: 100%;
+    height: 100%;
+}
+
+.shepherdoffire-info
+{
+
+    flex: 1;
+    padding: 2%;
+
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 3px 3px 0 red;
+}
+
+.shepherdoffire-workshop-link
+{
+    color: white;
+    text-decoration: none;
+}
+
+.shepherdoffire-workshop-link:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+.bottom-bar
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    height: 50px;
+}
+
+.bottom-bar-icons
+{
+    width: 50px;
+    height: 50px;
+    filter: invert();
+
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.icon-link
+{
+    text-decoration: none;
 }
