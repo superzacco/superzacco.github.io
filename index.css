@@ -1,0 +1,37 @@
+body
+{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+
+.top-tabs
+{
+    display: flex;
+    justify-content: center;
+}
+
+.tab-buttons
+{
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+
+    background: none;
+    border: none;
+    color: white;
+
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 50px;
+
+    transition-duration: 0.2s;
+
+    cursor:pointer;
+}
+
+.tab-buttons:hover
+{
+    background-color: red;
+}
