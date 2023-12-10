@@ -1,0 +1,110 @@
+body
+{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#divtop
+{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    background-image: url(sharpienew.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+#divbottom
+{   
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+#sharpienew
+{
+    flex-grow: 1;
+    cursor: pointer;
+    margin: 0;
+    line-height: 55vh;
+
+    font-family: 'Courier New';
+    font-size: 50px;
+    text-shadow: 4px 4px 0 #000;
+
+    backdrop-filter: blur(10px);
+}
+
+#sharpienew:hover
+{
+    transition: 0.3s;
+    backdrop-filter: blur(0px);    
+}
+
+#soupstuck
+{
+    flex-grow: 1;
+    cursor: pointer;
+    margin: 0;
+    line-height: 45vh;
+
+    font-family: 'Courier New';
+    font-size: 50px;
+    text-shadow: 4px 4px 0 #000;
+
+    backdrop-filter: blur(10px);
+}
+
+#soupstuck:hover
+{
+    backdrop-filter: blur(0px);
+    transition: 0.3s;
+}
+
+#sharpieold
+{
+    flex-grow: 1;
+    cursor: pointer;
+    margin: 0;
+    line-height: 45vh;
+
+    font-family: 'Courier New';
+    font-size: 50px;
+    text-shadow: 4px 4px 0 #000;
+    
+    backdrop-filter: blur(10px);
+}
+
+#sharpieold:hover
+{
+    backdrop-filter: blur(0px);
+    transition: 0.3s;
+}
+
+#divsoup
+{ 
+    width: 50vw;
+
+    display: flex;
+
+    background-image: url(soupstuck.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+#divoldsharp
+{
+    width: 50vw;
+
+    display: flex;
+
+    background-image: url(sharpieold.gif);
+    background-position: top;
+    background-size: cover;
+}
