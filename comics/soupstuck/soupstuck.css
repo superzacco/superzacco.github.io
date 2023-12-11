@@ -82,8 +82,32 @@ body
     font-weight: bold;
 }
 
+#log
+{   
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    
+    border: dashed 1px gray;
+    line-height: 1.75;
+}
+
+#logbutton
+{
+    appearance: auto;
+}
+
+#logcontent
+{
+    text-align: left;
+    line-height: 1.2;
+    margin: 12px 5%;
+    padding: 3px;
+}
+
 #commanddiv
 {
+    margin-top: 10px;
     text-align: left;
 }
 
