@@ -1,0 +1,114 @@
+body
+{
+    background-color: #3b3b3b;
+    margin: 0;
+
+    text-align: center;
+}
+
+#nav
+{
+    padding: 5px;
+}
+
+#appendplanet
+{
+    font-weight: bold;
+    font-family: 'Courier New';
+}
+
+#appendplanet::after
+{
+    content: url(worldicon.png);
+
+    margin: 0px 9px 0px 12px;
+    position: relative;
+    top: 2px;
+}
+
+#appendline 
+{   
+    font-weight: bold;
+    font-family: 'Courier New';
+}
+
+#appendline::after
+{
+    display: inline-block;
+    content: "|";
+    color: #fff;
+    margin: 0px 0px 0px 4px;
+}
+
+#middlebackground
+{
+    background-color: gray;
+
+    width: 940px;
+    
+    padding: 7px;
+    margin: 0 auto;
+}
+
+#contentbackground
+{
+    background-color: lightgray;
+
+    width: 650px;
+
+    margin: 0 auto;
+    padding: 0px 25px 25px 25px;
+    -webkit-box-sizing: border-box;
+}
+
+#currentcommand
+{
+    padding: 10px 0px 10px 0px;
+
+    font-family: Courier, monospace;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#img    
+{
+    margin: 0 -25px;
+}
+
+#text
+{   
+    font-size: 14px;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+#commanddiv
+{
+    text-align: left;
+}
+
+#command
+{
+    font-family: Verdana;
+    font-size: x-large;
+    display: inline-block;
+}
+
+#command::before
+{
+    content: ">";
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+#bottomcontainer
+{
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+
+    margin-top: 40px;
+    text-align: left;
+}
