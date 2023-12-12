@@ -63,7 +63,7 @@ body
 
 #currentcommand
 {
-    padding: 10px 0px 10px 0px;
+    padding: 12px 0px 12px 0px;
 
     font-family: Courier, monospace;
     font-size: xx-large;
@@ -90,6 +90,7 @@ body
     
     border: dashed 1px gray;
     line-height: 1.75;
+    background-color: white;
 }
 
 #logbutton
@@ -103,6 +104,7 @@ body
     line-height: 1.2;
     margin: 12px 5%;
     padding: 3px;
+
 }
 
 #commanddiv

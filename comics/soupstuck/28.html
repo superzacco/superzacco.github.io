@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Soupstuck</title>
+        <link rel="stylesheet" href="soupstuck.css">
+    </head>
+
+    <body>
+        <nav id="nav">
+            <a style="color: #FF1368;" id="appendplanet" href="/index.html">HOME</a>
+            <a style="color: #B4FF00;" id="appendline" href="1.html">READ</a>
+            <a style="color: #B4FF00;" id="appendplanet" href="log.html">LOG</a>
+            <a style="color: #FF1368;" id="appendline" href="bonus.html">BONUS</a>
+            <a style="color: #FF1368; font-weight: bold; font-family: Courier New;" href="credits.html">CREDITS</a>
+        </nav>
+
+        <div id="middlebackground">
+            <div id="contentbackground">
+
+                <div id="currentcommand">
+                    -->
+                </div>
+
+                <img id="img" src="panels/panel28.gif" alt="" style="width: 650px;">
+
+                <div id="text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div id="log">
+                    <button id="logbutton" onclick="togglePesterlog()">Messagelog</button>
+                    <div id="logcontent" style="text-align: left; display: none;">
+                        <span style="color: #ff5d89;">RM: I get it, you've been waiting for this for a long time.</span> <br>
+                        <span style="color: #ff5d89;">RM: But what am I going to do until yours arrives?</span> <br>
+                        <span style="color: #8fcb00;">WA: We could try to talk to Nico,</span> <br>
+                        <span style="color: #8fcb00;">WA: We haven't messaged each other all day,</span> <br>
+                        <span style="color: #ff5d89;">RM: Maybe you should go message him.</span> <br>
+                        <span style="color: #ff5d89;">RM: In the meantime, I'll just sit here in awe at the box.</span> <br>
+                        <span style="color: #8fcb00;">WA: Well, wait,</span> <br>
+                        <span style="color: #8fcb00;">WA: What does it look like??</span> <br>
+                        <span style="color: #ff5d89;">RM: The... box?</span> <br>
+                        <span style="color: #8fcb00;">WA: YES,</span> <br>
+                        <span style="color: #8fcb00;">WA: The box!</span> <br>
+                        <span style="color: #ff5d89;">RM: You'll just have to wait to see.</span> <br>
+                        <span style="color: #8fcb00;">WA: Really,,?</span> <br>
+                        <span style="color: #ff5d89;">RM: No, I'm kidding</span> <br>
+                        <span style="color: #ff5d89;">RM: <a href="IMG_1821.png" target="_blank" rel="noreferrer noopener">IMG_1821</a></span> <br>
+                        <span style="color: #8fcb00;">WA: It's,,, all blue?</span> <br>
+                        <span style="color: #ff5d89;">RM: What, were you expecting something else?</span> <br>
+                        <span style="color: #8fcb00;">WA: No,</span> <br>
+                        <span style="color: #8fcb00;">WA: I didn't know what to expect,</span> <br>
+                        <span style="color: #8fcb00;">WA: They never showed the box,</span> <br>
+                        <span style="color: #8fcb00;">WA: Also how are you supposed to know that the box has a headset inside?</span> <br>
+                        <span style="color: #8fcb00;">WA: It looks nothing like it,</span> <br>
+                        <span style="color: #ff5d89;">RM: I don't know.</span> <br>
+                        <span style="color: #ff5d89;">RM: But you make a good point, it doesn't look like the box for a cutting edge virtual reality headset.</span> <br>
+                        <span>-- wishfulAnon <span style="color: #8fcb00;">[WA]</span> is now idle! --</span> <br>
+                        <span style="color: #ff5d89;">RM: Jess?</span> <br>
+                        <span style="color: #8fcb00;">WA: HOLY SHIT,</span> <br>
+                        <span style="color: #8fcb00;">WA: Jack!! :D</span> <br>
+                        <span style="color: #ff5d89;">RM: What?</span> <br>
+                        <span style="color: #8fcb00;">WA: My headset is here!</span> <br>
+                        <span style="color: #ff5d89;">RM: Wow, what perfect timing.</span> <br>
+                        <span style="color: #ff5d89;">RM: Should we go ahead and open the boxes?</span> <br>
+                        <span style="color: #8fcb00;">WA: No, I still need to get it,</span> <br>
+                        <span style="color: #8fcb00;">WA: It's by my mailbox,</span> <br>
+                        <span style="color: #8fcb00;">WA: You go talk to Nico,</span> <br>
+                        <span style="color: #8fcb00;">WA: See if he has his headset yet,</span> <br>
+                        <span>-- wishfulAnon <span style="color: #8fcb00;">[WA]</span> ceased messaging razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> --</span> <br>
+                        <span style="color: #ff5d89;">RM: Okay, I guess.</span> <br>
+                    </div>
+                </div>  
+
+                <div id="commanddiv">
+                    <a id="command" href="29.html">Jack: Take to the floor</a>
+                </div>
+
+                <div id="bottomcontainer">
+                    <a href="1.html">Start Over</a>
+                    |
+                    <a href="27.html">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logButton = document.getElementById('logbutton');
+        logButton.innerText = 'Open ' + logButton.innerText;
+    });
+
+    function togglePesterlog() {
+        var pesterlogContent = document.getElementById('logcontent');
+        var logButton = document.getElementById('logbutton');
+
+        if (pesterlogContent.style.display === 'none') {
+            pesterlogContent.style.display = 'block';
+            logButton.innerText = 'Close ' + logButton.innerText.substring(5); // Appends "Hide" to the beginning
+        } else {
+            pesterlogContent.style.display = 'none';
+            logButton.innerText = 'Open ' + logButton.innerText.substring(5); // Appends "Show" to the beginning
+        }
+    }
+</script>
+

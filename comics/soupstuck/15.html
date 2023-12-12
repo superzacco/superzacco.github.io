@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Soupstuck</title>
+        <link rel="stylesheet" href="soupstuck.css">
+    </head>
+
+    <body>
+        <nav id="nav">
+            <a style="color: #FF1368;" id="appendplanet" href="/index.html">HOME</a>
+            <a style="color: #B4FF00;" id="appendline" href="1.html">READ</a>
+            <a style="color: #B4FF00;" id="appendplanet" href="log.html">LOG</a>
+            <a style="color: #FF1368;" id="appendline" href="bonus.html">BONUS</a>
+            <a style="color: #FF1368; font-weight: bold; font-family: Courier New;" href="credits.html">CREDITS</a>
+        </nav>
+
+        <div id="middlebackground">
+            <div id="contentbackground">
+
+                <div id="currentcommand">
+                    Jack: See who's messaging you.
+                </div>
+
+                <img id="img" src="panels/panel15.png" alt="">
+
+                <div id="text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div id="log">
+                    <button id="logbutton" onclick="togglePesterlog()">Messagelog</button>
+                    <div id="logcontent" style="text-align: left; display: none;">
+                        <span>-- wishfulAnon <span style="color: #8fcb00;">[WA]</span> began messaging razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> --</span> <br>
+                        <br>    
+                        <span style="color: #8fcb00;">WA: Hey Jack,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Jack I have something important to tell you,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Jaaaaaack!</span> <br> 
+                        <br>
+                        <span>-- razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> joined the conversation --</span> <br>
+                        <br>
+                        <span style="color: #ff5d89;">RM: Yeah?</span> <br> 
+                        <span style="color: #ff5d89;">RM: What's so important?</span> <br> 
+                        <span style="color: #8fcb00;">WA: Oh! Jack!!</span> <br> 
+                        <span style="color: #8fcb00;">WA: My virtual reality headset arrives today!!!</span> <br> 
+                        <span style="color: #8fcb00;">WA: You know, the one that we all pretty much made you buy,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Speaking of that!</span> <br> 
+                        <span style="color: #8fcb00;">WA: When does yours arrive??</span> <br> 
+                        <span style="color: #ff5d89;">RM: Tomorrow.</span> <br> 
+                        <span style="color: #ff5d89;">RM: I'm still waiting, obviously.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Ugh, Jack,</span> <br> 
+                        <span style="color: #8fcb00;">WA: You didn't get the 2,,, or one day shipping??</span> <br> 
+                        <span style="color: #8fcb00;">WA: Even I got the one day shipping,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Come on!!</span> <br> 
+                        <span style="color: #ff5d89;">RM: I just didn't see the point on spending the extra money.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Your dad is literally mr. moneybags,</span> <br> 
+                        <span style="color: #ff5d89;">RM: Yeah but not all of his money is mine.</span> <br> 
+                        <span style="color: #ff5d89;">RM: If you really want, I can try to change the shipping option.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Yeah, do that,</span> <br> 
+                        <span style="color: #ff5d89;">RM: Give me a second.</span> <br> 
+                        <span>-- razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> is now idle! --</span> <br> 
+                        <span style="color: #8fcb00;">WA: Did you do it??</span> <br> 
+                        <span style="color: #ff5d89;">RM: Yeah, I changed it so it will arrive today.</span> <br> 
+                        <span style="color: #ff5d89;">RM: For an extra hundred dollars.</span> <br> 
+                        <span style="color: #ff5d89;">RM: Where the hell did you get $100?</span> <br> 
+                        <span style="color: #ff5d89;">RM: And who the hell is selling this for that much.</span> <br> 
+                        <span style="color: #8fcb00;">WA: It's not something that's need-to-know,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Anyway, I'm really looking forward to playing this game!!</span> <br> 
+                        <span style="color: #ff5d89;">RM: What the hell is the game anyway?</span> <br> 
+                        <span style="color: #ff5d89;">RM: In as few words as possible.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Uhh,,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Basically, I'm going to assume that you've played a virtual reality game of some sort before,</span> <br> 
+                        <span style="color: #ff5d89;">RM: Absolutely not.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Okay, good,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Basically,,, We are all in this sort of rpg game,,, sort of,</span> <br> 
+                        <span style="color: #8fcb00;">WA: I actually don't really know,</span> <br> 
+                        <span style="color: #8fcb00;">WA: All of the promotional stuff was really vague,</span> <br> 
+                        <span style="color: #ff5d89;">RM: So all of us collectively decided to spend upwards of $2,000 on all of the headsets, the games, and anything else that comes with it?</span> <br> 
+                        <span style="color: #8fcb00;">WA: Yeah basically,,</span> <br> 
+                        <span style="color: #ff5d89;">RM: What a great investment.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Hey wait how did Nico get that money?</span> <br> 
+                        <span style="color: #ff5d89;">RM: Nico was able to scrounge up enough money to buy the headset on his own.</span> <br> 
+                        <span style="color: #ff5d89;">RM: I wouldn't have been opposed to helping him buy it.</span> <br> 
+                        <span style="color: #ff5d89;">RM: Speaking of video games...</span> <br> 
+                        <span style="color: #8fcb00;">WA: Worst segue ever, shut up,</span> <br> 
+                        <span style="color: #ff5d89;">RM: I got a new highscore in Hexcells today.</span> <br> 
+                        <span style="color: #ff5d89;">RM: I beat the whole game in about 10 minutes.</span> <br> 
+                        <span style="color: #ff5d89;">RM: You could say that it's a speedrun.</span> <br> 
+                        <span style="color: #ff5d89;">RM: I've memorized every single mine position, so beating the game quickly is super easy.</span> <br> 
+                        <span style="color: #ff5d89;">RM: The game has gotten kind of boring actually.</span> <br> 
+                        <span style="color: #ff5d89;">RM: Maybe I should download Hexcells infinite then...</span> <br> 
+                    </div>
+                </div>  
+
+                <div id="commanddiv">
+                    <a id="command" href="16.html">--></a>
+                </div>
+
+                <div id="bottomcontainer">
+                    <a href="1.html">Start Over</a>
+                    |
+                    <a href="14.html">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logButton = document.getElementById('logbutton');
+        logButton.innerText = 'Open ' + logButton.innerText;
+    });
+
+    function togglePesterlog() {
+        var pesterlogContent = document.getElementById('logcontent');
+        var logButton = document.getElementById('logbutton');
+
+        if (pesterlogContent.style.display === 'none') {
+            pesterlogContent.style.display = 'block';
+            logButton.innerText = 'Close ' + logButton.innerText.substring(5); // Appends "Hide" to the beginning
+        } else {
+            pesterlogContent.style.display = 'none';
+            logButton.innerText = 'Open ' + logButton.innerText.substring(5); // Appends "Show" to the beginning
+        }
+    }
+</script>
+

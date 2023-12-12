@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Soupstuck</title>
+        <link rel="stylesheet" href="soupstuck.css">
+    </head>
+
+    <body>
+        <nav id="nav">
+            <a style="color: #FF1368;" id="appendplanet" href="/index.html">HOME</a>
+            <a style="color: #B4FF00;" id="appendline" href="1.html">READ</a>
+            <a style="color: #B4FF00;" id="appendplanet" href="log.html">LOG</a>
+            <a style="color: #FF1368;" id="appendline" href="bonus.html">BONUS</a>
+            <a style="color: #FF1368; font-weight: bold; font-family: Courier New;" href="credits.html">CREDITS</a>
+        </nav>
+
+        <div id="middlebackground">
+            <div id="contentbackground">
+
+                <div id="currentcommand">
+                    -->
+                </div>
+
+                <img id="img" src="panels/panel27.png" alt="" style="width: 650px;">
+
+                <div id="text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div id="log">
+                    <button id="logbutton" onclick="togglePesterlog()">Messagelog</button>
+                    <div id="logcontent" style="text-align: left; display: none;">
+                        <span style="color: #ff5d89;">RM: Wait...</span> <br> 
+                        <span style="color: #ff5d89;">RM: Hey sorry, one second.</span> <br> 
+                        <span style="color: #ff5d89;">RM: My dad wants me to see something.</span> <br> 
+                        <br>
+                        <span>-- razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> is now idle! --</span> <br>
+                        <br>
+                        <span style="color: #ff5d89;">RM: JESS!</span> <br> 
+                        <span style="color: #ff5d89;">RM: Good news!</span> <br> 
+                        <span style="color: #ff5d89;">RM: My headset just arrived!</span> <br> 
+                        <span style="color: #8fcb00;">WA: Already??</span> <br> 
+                        <span style="color: #8fcb00;">WA: I'm still waiting for mine!</span> <br> 
+                        <span style="color: #8fcb00;">WA: I ordered it first, and you still got yours sooner,</span> <br> 
+                        <span style="color: #ff5d89;">RM: Happens.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Whatever,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Just wait until mine arrives to open it,</span> <br> 
+                        <span style="color: #ff5d89;">RM: Don't worry, I wont open it yet.</span> <br> 
+                        <span style="color: #8fcb00;">WA: Good,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Thanks,</span> <br> 
+                        <span style="color: #8fcb00;">WA: Honestly I can't wait until all three of us have our headsets,</span> <br> 
+                        <span style="color: #8fcb00;">WA: I've been waiting for this game for a whole week,</span> <br> 
+                        <span style="color: #ff5d89;">RM: A *whole* week.</span> <br> 
+                        <span style="color: #8fcb00;">WA: They only started advertising the game a week before it got released,</span> <br> 
+                        <span style="color: #8fcb00;">WA: There are already people who are playing the game,</span> <br> 
+                        <span style="color: #8fcb00;">WA: I already saw someone who completed it,</span> <br> 
+                        <span style="color: #8fcb00;">WA: All of it,</span> <br> 
+                        <span style="color: #8fcb00;">WA: On their own,</span> <br> 
+                    </div>
+                </div>  
+
+                <div id="commanddiv">
+                    <a id="command" href="28.html">--></a>
+                </div>
+
+                <div id="bottomcontainer">
+                    <a href="1.html">Start Over</a>
+                    |
+                    <a href="26.html">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logButton = document.getElementById('logbutton');
+        logButton.innerText = 'Open ' + logButton.innerText;
+    });
+
+    function togglePesterlog() {
+        var pesterlogContent = document.getElementById('logcontent');
+        var logButton = document.getElementById('logbutton');
+
+        if (pesterlogContent.style.display === 'none') {
+            pesterlogContent.style.display = 'block';
+            logButton.innerText = 'Close ' + logButton.innerText.substring(5); // Appends "Hide" to the beginning
+        } else {
+            pesterlogContent.style.display = 'none';
+            logButton.innerText = 'Open ' + logButton.innerText.substring(5); // Appends "Show" to the beginning
+        }
+    }
+</script>
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Soupstuck</title>
+        <link rel="stylesheet" href="soupstuck.css">
+    </head>
+
+    <body>
+        <nav id="nav">
+            <a style="color: #FF1368;" id="appendplanet" href="/index.html">HOME</a>
+            <a style="color: #B4FF00;" id="appendline" href="1.html">READ</a>
+            <a style="color: #B4FF00;" id="appendplanet" href="log.html">LOG</a>
+            <a style="color: #FF1368;" id="appendline" href="bonus.html">BONUS</a>
+            <a style="color: #FF1368; font-weight: bold; font-family: Courier New;" href="credits.html">CREDITS</a>
+        </nav>
+
+        <div id="middlebackground">
+            <div id="contentbackground">
+
+                <div id="currentcommand">
+                    Jack: Message Nico
+                </div>
+
+                <img id="img" src="panels/panel30.gif" alt="" style="width: 650px;">
+
+                <div id="text">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div id="log">
+                    <button id="logbutton" onclick="togglePesterlog()">Messagelog</button>
+                    <div id="logcontent" style="text-align: left; display: none;">
+                        <span style="">-- razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> began messaging glassesFreakazoid <span style="color: #4a40e0;">[GF]</span> --</span> <br>
+                        <br>
+                        <span style="color: #ff5d89;">RM: Hey Nico.</span> <br>
+                        <span style="color: #ff5d89;">RM: Jess and I want to know if you've gotten your headset yet.</span> <br>
+                        <span style="color: #4a40e0;">GF: Yeah. I was setting it up actually.</span> <br>
+                        <span style="color: #ff5d89;">RM: You're setting it up already?</span> <br>
+                        <span style="color: #ff5d89;">RM: We told you to wait for us!</span> <br>
+                        <span style="color: #4a40e0;">GF: Sorry!</span> <br>
+                        <span style="color: #4a40e0;">GF: I wasn’t gonna start yet.</span> <br>
+                        <span style="color: #4a40e0;">GF: Yeesh.</span> <br>
+                        <span style="color: #ff5d89;">RM: You weren't even supposed to unbox it until we had ours.</span> <br>
+                        <span style="color: #4a40e0;">GF: Sorry :’(</span> <br>
+                        <span style="color: #ff5d89;">RM: Whatever, sorry.</span> <br>
+                        <span style="color: #ff5d89;">RM: Since you set up yours already, can you help us with setting up ours?</span> <br>
+                        <span style="color: #4a40e0;">GF: That’s why I unboxed it already.</span> <br>
+                        <span style="color: #4a40e0;">GF: What do you need help with?</span> <br>
+                        <span style="color: #ff5d89;">RM: Nothing yet.</span> <br>
+                        <span style="color: #ff5d89;">RM: Jess is getting her package right now.</span> <br>
+                        <span style="color: #ff5d89;">RM: When she's back, I'll start a group chat.</span> <br>
+                        <span style="color: #ff5d89;">RM: But I need help with everything.</span> <br>
+                        <span style="color: #ff5d89;">RM: I don't play video games like you guys.</span> <br>
+                        <span style="color: #4a40e0;">GF: Lol why not?</span> <br>
+                        <span style="color: #4a40e0;">GF: I use it to escape my problems.</span> <br>
+                        <span style="color: #4a40e0;">GF: Must be nice not having poor people problems lmao</span> <br>
+                        <span style="color: #ff5d89;">RM: Listen, I just do other stuff.</span> <br>
+                        <span style="color: #ff5d89;">RM: Like reading, or listening to music, or watching shows.</span> <br>
+                        <span style="color: #ff5d89;">RM: I just don't like games that much, but I'm playing this one.</span> <br>
+                        <span style="color: #ff5d89;">RM: I wouldn't have even thought about playing it if it wasn't in virtual reality.</span> <br>
+                        <span style="color: #ff5d89;">RM: Virtual reality seems more straightforward to play.</span> <br>
+                        <span style="color: #4a40e0;">GF: Alright then. Gotta tell you, this might be worth more than half my shit combined.</span> <br>
+                        <span style="color: #4a40e0;">GF: Anyway, I'm gonna grab a bite to eat.</span> <br>
+                        <span style="color: #4a40e0;">GF: You wanna come?</span> <br>
+                        <span style="color: #ff5d89;">RM: You can do that yourself.</span> <br>
+                        <span style="color: #ff5d89;">RM: I'm busy with all this waiting that I'm doing.</span> <br>
+                        <span style="color: #4a40e0;">GF: Alright, be back in a few.</span> <br>
+                        <span style="">-- glassesFreakazoid <span style="color: #4a40e0;">[GF]</span> ceased messaging razorbladeMeltdown <span style="color: #ff5d89;">[RM]</span> --</span> <br>
+                        <span style="color: #ff5d89;">RM: Okay.</span> <br>
+                    </div>
+                </div>  
+
+                <div id="commanddiv">
+                    <a id="command" href="31.html">--></a>
+                </div>
+
+                <div id="bottomcontainer">
+                    <a href="1.html">Start Over</a>
+                    |
+                    <a href="29.html">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var logButton = document.getElementById('logbutton');
+        logButton.innerText = 'Open ' + logButton.innerText;
+    });
+
+    function togglePesterlog() {
+        var pesterlogContent = document.getElementById('logcontent');
+        var logButton = document.getElementById('logbutton');
+
+        if (pesterlogContent.style.display === 'none') {
+            pesterlogContent.style.display = 'block';
+            logButton.innerText = 'Close ' + logButton.innerText.substring(5); // Appends "Hide" to the beginning
+        } else {
+            pesterlogContent.style.display = 'none';
+            logButton.innerText = 'Open ' + logButton.innerText.substring(5); // Appends "Show" to the beginning
+        }
+    }
+</script>
+
