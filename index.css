@@ -1,48 +1,308 @@
+@font-face {
+    font-family: 'Bahn';
+    src:  url('fonts/bahnschrift.ttf') format('truetype');
+}
+
 body
 {
-    background-color: #000000;
-    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+
+    background: rgb(46, 46, 46);
     color: white;
+
+    scrollbar-width: thin;
 }
 
-.top-tabs
+.top_bar
 {
     display: flex;
-    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+    background-color: rgb(29, 29, 29);
 }
 
-.tab-buttons
+.home_button
 {
-    text-decoration: none;
+    margin: auto 10px;
+    height: 100%;
+    width: 150px;
 
-    flex-grow: 1;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    display: grid;
+    text-align: center;
+    align-items: center;
 
-    background: none;
-    border: none;
+    background-color:rgb(37, 37, 37);
+    transition: background-color .5s, color .5s;
+} .home_button:hover {
+    background-color: rgb(204, 204, 204);
+    color: rgb(0, 0, 0);
+}
+
+
+.home_button_text
+{
+    height: 28px;
+    font-family: Bahn;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.center_panel
+{
+    margin: auto;
+    width: 50vw;
+    height: fit-content;
+
+    background-color: rgb(65, 65, 65);
+}
+
+.profile_header
+{
+    display: flex;
+    align-items: stretch;
+}
+
+.profile_left
+{
+    display: flex;
+    min-width: 70%;
+}
+
+.profile_right
+{
+    min-width: 30%;
+}
+
+.lower_profile
+{
+    display: flex;
+}
+
+.fc_titlebar
+{
+    display: flex;
+    align-items: stretch;
+
+    background-color: rgb(155, 140, 9);
+    color: rgb(226, 217, 136);
+
+    font-family: Bahn;
+    font-size: 20px;
+
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.featured_text
+{
+    flex-grow: 4;
+}
+
+.as_of_txt
+{
+    margin: auto;
+    text-align: end;
     color: white;
-
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 50px;
-
-    transition-duration: 0.2s;
-
-    cursor:pointer;
+    font-size: 15px;
+    color: rgb(226, 217, 136);
+    flex-grow: 4;
 }
 
-.tab-buttons:hover
+.fc_box
 {
+    display: grid;
+
+    background-color: rgb(88, 84, 57);
+    height: 200px;
+}
+
+.fc_subbox
+{
+    display: flex;
+
+    min-height: 20px;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: rgb(55, 55, 55);
+}
+
+.inactive_text
+{
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.twine_text
+{
+    display: flex;
+    flex-direction: column;
+    font-family: Bahn;
+
+    margin-left: 5px;
+    margin-right: -10px;
+    padding: 10px;
+}
+
+.twine_title
+{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.twine_subtitle
+{
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+}
+
+.lc_icon
+{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+.latest_creations
+{
+    margin-top: 15px;
+}
+
+.lc_titlebox
+{   
+    display: flex;
+    background-color: rgb(29, 29, 29);
+
+    font-family: Bahn;
+    font-size: 20px;
+
+    text-align: left;
+    padding: 10px;
+
+}
+
+.title_container
+{
+    display: flex;
+}
+
+.lc_box
+{
+    display: grid;
+
+    background-color: rgb(39, 39, 39);
+    height: 200px;
+}
+
+.lc_subbox
+{
+    display: flex;
+
+    min-height: 20px;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: rgb(55, 55, 55);
+}
+
+.left_bar
+{
+    padding: 10px;
+}
+
+.right_bar
+{
+    min-width: 30%;
+    padding: 10px;
+}
+
+.rb_tab
+{
+    background-color: rgb(29, 29, 29);
+
+    font-family: Bahn;
+    font-size: 20px;
+
+    text-align: left;
+    padding: 10px;
+}
+
+.rb_box
+{
+    text-align: left;
+    background-color: rgb(49, 49, 49);
+}
+
+.rb_entry
+{
+    padding: 10px;
+}
+
+.rb_amount
+{
+    font-family: Bahn;
+    font-weight: 100;
+    color: gray;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+.rb_text
+{
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 500;
+} .rb_text:hover {text-decoration: underline;}
+
+.profile_header
+{
+    padding: 20px;
+    display: flex;
+    height: 300px;
+}
+
+.username
+{   
+    font-family: Bahn;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.alias_carat
+{
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alias_dropdown
+{
+    visibility: hidden;
+    width: 25px;
+    height: 200px;
     background-color: red;
 }
 
-.under-construction
+.profile_picture_holder
 {
-    font-family: Verdana;
-    font-weight: bold;
-    font-size: 50px;
-    
-    margin-top: 50px;
+    height: 100%;
+    padding-right: 10px;
+    justify-content: left;
+}
+
+.profile_link
+{
+    height: 230px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(106, 190, 218);
 }
