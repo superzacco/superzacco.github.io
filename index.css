@@ -17,6 +17,7 @@ body
 .top_bar
 {
     display: flex;
+    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 50px;
@@ -121,8 +122,8 @@ body
     text-decoration: none;      
 
     opacity: 0;
-    min-height: 48px;
-    padding-top: 10px;
+    min-height: 46px;
+    padding-top: 12px;
     
     font-family: Bahn;
     font-weight: 400;
@@ -134,7 +135,6 @@ body
     background-color: rgb(37, 37, 37);
     color: rgb(255, 255, 255);
 }
-
 
 .center_panel
 {
@@ -159,7 +159,23 @@ body
 
 .profile_right
 {
+    background-color: rgb(29, 29, 29);
+
+    font-family: Bahn;
+    font-size: 20px;
+
+    text-align: left;
+
+    background-color: rgb(49, 49, 49);
     min-width: 30%;
+}
+
+.profile_right_tab
+{
+    padding: 10px;
+
+    font-family: bahn;
+    background-color: rgb(29, 29, 29);
 }
 
 .lower_profile
@@ -209,6 +225,7 @@ body
 {
     display: flex;
 
+    min-width: 60%;
     min-height: 20px;
     padding: 10px;
     margin: 10px;
@@ -226,6 +243,9 @@ body
 
 .twine_text
 {
+    overflow:auto;
+    white-space:inherit;
+
     display: flex;
     flex-direction: column;
     font-family: Bahn;
@@ -233,6 +253,7 @@ body
     margin-left: 5px;
     margin-right: -10px;
     padding: 10px;
+
 }
 
 .twine_title
@@ -245,6 +266,7 @@ body
 
 .twine_subtitle
 {
+    text-overflow: ellipsis ;
     font-size: 14px;
     color: rgb(170, 170, 170);
 }
@@ -290,8 +312,9 @@ body
 .lc_subbox
 {
     display: flex;
+    min-width: 60%;
 
-    min-height: 20px;
+    min-height: 10px;
     padding: 10px;
     margin: 10px;
 
@@ -300,11 +323,14 @@ body
 
 .left_bar
 {
+    flex-grow: 7;
     padding: 10px;
 }
 
 .right_bar
 {
+    flex-grow: 3;
+
     min-width: 30%;
     padding: 10px;
 }
@@ -353,7 +379,7 @@ body
 {
     padding: 20px;
     display: flex;
-    height: 300px;
+    height: 250px;
 }
 
 .username
