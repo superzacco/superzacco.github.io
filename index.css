@@ -307,12 +307,17 @@ body
 .twine_subtitle
 {
     text-overflow: ellipsis ;
+    margin-top: 4px;
     font-size: 14px;
     color: rgb(170, 170, 170);
 }
 
 .lc_icon
 {
+    min-width: 160px;
+    max-width: 220px;
+    object-fit: cover;
+    overflow: hidden;
     color: white;
     text-decoration: none;
     height: 100%;
