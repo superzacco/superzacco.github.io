@@ -15,41 +15,117 @@
             <div class="links_button" href="index.html">
                 <a class="links_button_text">LINKS</a>
                 <a class="dropdown_button_text" href="https://www.youtube.com/@ZaccoOfficial" target="_blank">YouTube</a>
-                <a class="dropdown_button_text" href="https://bsky.app/profile/superzacco.bsky.social" target="_blank">Bluesky</a>
+                <a class="dropdown_button_text" href="https://github.com/superzacco" target="_blank">GitHub</a>
                 <a class="dropdown_button_text" href="https://steamcommunity.com/id/TheRealZacco/" target="_blank">Steam</a>
+                <a class="dropdown_button_text" href="https://bsky.app/profile/superzacco.bsky.social" target="_blank">Bluesky</a>
             </div>
         </div>
 
         <div class="body_container">
-            <div class="different_game_container">
-                <div class="game_container_top_bar">
-                    <img class="game_icon" src="tf2.png">
-
-                    <div class="map_title_container">
-                        <a class="game_container_map_title">pl_twine</a>
-                        <a class="version_string">B9</a>
+            <div class="different_game_container"> <!-- TEAM FORTREESS 2 -->
+                <div class="different_map_container">
+                    <div class="map_top_bar">
+                        <div class="map_title_container">
+                            <a class="game_container_map_title">pl_twine</a> <!-- PL_TWINE -->
+                            <a class="version_string">B9</a>
+                        </div>
                     </div>
 
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3359919617" target="_blank"><img class="workshop_icon" src="steam.png"></a>
+                    <div class="carousel_container_hbox">
+                        <div class="icon_container">
+                            <img class="game_icon" src="tf2.png">
+                        </div>
+                        
+                        <div class="image_carousel"> 
+                            <button class="image_prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="map_image_container">
+                                <img class="map_image" src="twine/s1cave.jpg">
+                                <img class="map_image" src="twine/s2mountain.jpg">
+                                <img class="map_image" src="twine/s3ball.jpg">
+                                <img class="map_image" src="twine/s3cave.jpg">
+                                <img class="map_image" src="twine/s2cap1.jpg">
+                                <img class="map_image" src="twine/s2end.jpg">
+                                <img class="map_image" src="twine/s3house.jpg">
+                            </div>
+                            <button class="image_next" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+                        
+                        <div class="icon_container">
+                            <a class="workshop_link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3359919617" target="_blank"><img class="workshop_icon" src="steam.png"></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="image_carousel">
-                    <button class="image_prev" onclick="changeSlide(-1)">&#10094;</button>
-
-                    <div class="map_image_container">
-                        <img class="map_image" src="twine/20251104110552_1.jpg">
-                        <img class="map_image" src="twine/20251104111211_1.jpg">
-                        <img class="map_image" src="twine/20251104111535_1.jpg">
-                        <img class="map_image" src="twine/20251104111631_1.jpg">
-                        <img class="map_image" src="twine/20251104112046_1.jpg">
-                        <img class="map_image" src="twine/20251104112117_1.jpg">
+                <div class="different_map_container">
+                    <div class="map_top_bar">
+                        <div class="map_title_container">
+                            <a class="game_container_map_title">cp_kosmos</a> <!-- CP_KOSMOS -->
+                            <a class="version_string">A3</a>
+                        </div>
                     </div>
 
-                    <button class="image_next" onclick="changeSlide(1)">&#10095;</button>
+                    <div class="carousel_container_hbox">
+                        <div class="icon_container">
+                            <img class="game_icon" src="tf2.png">
+                        </div>
+                        
+                        <div class="image_carousel"> 
+                            <button class="image_prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="map_image_container">
+                                <img class="map_image" src="kosmos/epoint.jpg">
+                                <img class="map_image" src="kosmos/redspawn1.jpg">
+                                <img class="map_image" src="kosmos/cpoint.jpg">
+                                <img class="map_image" src="kosmos/above.jpg">
+                                <img class="map_image" src="kosmos/bpoint.jpg">
+                                <img class="map_image" src="kosmos/apoint.jpg">
+                            </div>
+                            <button class="image_next" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+                        
+                        <div class="icon_container">
+                            <a class="workshop_link" href="https://tf2maps.net/downloads/kosmos.18951/" target="_blank"><img class="workshop_icon" src="tf2maps.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="different_game_container"> <!-- COUNTER-STRIKE 2 -->
+                <div class="different_map_container">
+                    <div class="map_top_bar">
+                        <div class="map_title_container">
+                            <a class="game_container_map_title">de_cydonia</a> <!-- DE_CYDONIA -->
+                            <a class="version_string">A1</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel_container_hbox">
+                        <div class="icon_container">
+                            <img class="game_icon" src="cs2.png">
+                        </div>
+                        
+                        <div class="image_carousel"> 
+                            <button class="image_prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="map_image_container">
+                                <img class="map_image" src="cydonia/mid.jpg">
+                                <img class="map_image" src="cydonia/banana.jpg">
+                                <img class="map_image" src="cydonia/b_site.jpg">
+                                <img class="map_image" src="cydonia/a_site.jpg">
+                                <img class="map_image" src="cydonia/altmid.jpg">
+                                <img class="map_image" src="cydonia/long.jpg">
+                                <img class="map_image" src="cydonia/underpass.jpg">
+                            </div>
+                            <button class="image_next" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+                        
+                        <div class="icon_container">
+                            <a class="workshop_link" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3659119409" target="_blank"><img class="workshop_icon" src="steam.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <script src="leveldesign.js"></script>
     </body>
 </html>

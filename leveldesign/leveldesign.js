@@ -1,23 +1,35 @@
-let currentIndex = 0;
-const container = document.querySelector('.map_image_container');
-const images = document.querySelectorAll('.map_image');
+document.querySelectorAll('.image_carousel').forEach(wrapper => {
+    const container = wrapper.querySelector('.map_image_container');
+    const nextBtn = wrapper.querySelector('.image_next');
+    const prevBtn = wrapper.querySelector('.image_prev');
 
-function changeSlide(direction) {
-    currentIndex += direction;
+    // Helper to get the width of one image dynamically
+    const getStepWidth = () => {
+        const firstImg = container.querySelector('.map_image');
+        return firstImg ? firstImg.clientWidth : 0;
+    };
 
-    // Loop logic
-    if (currentIndex >= images.length) {
-        currentIndex = 0;
-    } else if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-    }
+    nextBtn.addEventListener('click', () => {
+        const stepWidth = getStepWidth();
+        const maxScroll = container.scrollWidth - container.clientWidth;
 
-    // Calculate how far to scroll: 
-    // The width of one image * the index we want to see
-    const widthPerImage = images[0].clientWidth;
-    
-    container.scrollTo({
-        left: widthPerImage * currentIndex,
-        behavior: 'smooth'
+        // If we are at the end (with a 5px buffer for sub-pixel rounding)
+        if (container.scrollLeft >= maxScroll - 5) {
+            container.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: stepWidth, behavior: 'smooth' });
+        }
     });
-}
+
+    prevBtn.addEventListener('click', () => {
+        const stepWidth = getStepWidth();
+
+        // If we are at the very beginning
+        if (container.scrollLeft <= 5) {
+            const maxScroll = container.scrollWidth - container.clientWidth;
+            container.scrollTo({ left: maxScroll, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: -stepWidth, behavior: 'smooth' });
+        }
+    });
+});
