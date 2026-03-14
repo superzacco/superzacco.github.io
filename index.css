@@ -195,11 +195,35 @@ body
 
 .extras_box
 {
+    padding: 10px;
     margin-bottom: 15px;
     height: 320px;
 
     font-family: bahn;
     background-color: rgb(49, 49, 49);
+}
+
+.extras_entry
+{
+    display: flex;
+
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 12px;
+
+    align-items: center;
+}
+
+.patreon_text
+{
+
+    color: rgb(255, 114, 62);
+}
+
+.extras_icon
+{
+    margin-right: 6px;
+    max-height: 16px;
 }
 
 .extras_tab
