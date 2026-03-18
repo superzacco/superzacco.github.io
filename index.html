@@ -37,8 +37,8 @@
                     <div class="profile_right_vbox">
                         <div class="username_and_aliases">
                             <a class="username">Zacco</a> 
-                            <a class="alias_carat" onclick="ShowAliasDropdown()">⏷</a>
-                            <div class="alias_dropdown" id="alias_dropdown" >
+                            <button class="alias_carat" popovertarget="alias_dropdown">⏷</button>
+                            <div class="alias_dropdown" id="alias_dropdown" popover>
                                 <div class="alias_dropdown_background">
                                     <p class="alias_subtitle">Also known as... </p>
                                     <div class="aliases_box">
@@ -94,17 +94,11 @@
                                 <a class="twine_title"  href="coding/scp_game.html" target="_self">Devlog: Multiplayer SCP Game</a>
                                 <br>
                                 <a class="twine_subtitle">
-                                    I've been working on an SCP: Containment Breach fangame for almost 2 years now, and it is almost in a state to be
+                                    I've been working on a CO-OP SCP game inspired by Containment Breach for nearly 2 years now, and it's almost ready to be
                                     released in v0.1. Key-word being 'almost'.
                                     <br>
                                     <br>
-                                    It is a co-op game. It WILL release with multiplayer.
-                                    <br>
-                                    <br>
-                                    In my opinion, SCP: Containment Breach is one of the best horror games of all time, and as such
-                                    this game is heavily inspired by it. Currently, it's extremely similar to Containment
-                                    Breach, but I will be adapting it to my own image of "SCP" and The Foundation as time
-                                    goes on. 
+                                    It WILL release with multiplayer. Soon™...
                                 </a>
                             </div>
                         </div>    
@@ -198,10 +192,3 @@
         </div>
     </body>
 </html>
-
-<script>
-function ShowAliasDropdown() {
-    const doc = document.getElementById("alias_dropdown");
-    doc.classList.toggle("show");
-}
-</script>

@@ -446,28 +446,31 @@ body
 
 .alias_carat
 {
+    anchor-name: --alias-carat;
     user-select: none;
     height: 20px;
     cursor: pointer;
-    margin-top: 20px;
-    margin-left: -6px;
+    margin-top: 12px;
+    margin-left: -12px;
+
+    border: none;
+    background: none;
+    color: white;
+    font-size: 20px;
 }
 
-#alias_dropdown {
-    margin-top: 50px;
-    margin-left: 85px;
-
+.alias_dropdown {
+    border: none;
     position: absolute;
-    opacity: 0;
-    pointer-events: none;   
 
+    margin-top: 12px;
+    margin-left: 6px;
+    position-anchor: --alias-carat;
+    position-area: bottom span-right;
 
+    color: white;
     background-color: rgb(29,29,29);
-}
-
-#alias_dropdown.show {
-    opacity: 1;
-    pointer-events: auto;
+    
 }
 
 .alias_dropdown_background
