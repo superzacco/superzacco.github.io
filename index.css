@@ -41,7 +41,7 @@ body
 
     text-align: center;
 
-    background-color:rgb(37, 37, 37);
+    background-color:rgb(61, 61, 61);
     transition: background-color .5s;
 } .home_button:hover {
     background-color: rgb(255, 255, 255);
@@ -80,7 +80,7 @@ body
 
     text-align: center;
 
-    background-color:rgb(37, 37, 37);
+    background-color:rgb(61, 61, 61);
     transition: background-color .5s, min-height .5s;
 } .links_button:hover {
     min-height: 58px;
@@ -146,7 +146,7 @@ body
     flex-direction: row;
     
     margin: auto;
-    width: calc(25vw + 500px);
+    width: min(90%, calc(25vw + 500px));
     height: fit-content;
 
     background-color: rgb(65, 65, 65);
@@ -161,6 +161,7 @@ body
 .right_panels
 {
     padding: 10px;
+    padding-left: 0px;
     width: 30%;
 }
 
@@ -191,6 +192,12 @@ body
 
     background-color: rgb(49, 49, 49);
     min-width: 30%;
+}
+
+.profile_right_vbox
+{
+    display: flex;
+    flex-direction: column;
 }
 
 .extras_box
@@ -503,6 +510,11 @@ body
     border-width: 2px;
     border-style: solid;
     border-color: rgb(106, 190, 218);
+}
+
+.profile_description_container
+{
+    overflow: auto;
 }
 
 .profile_description
