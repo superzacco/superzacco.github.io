@@ -214,6 +214,7 @@ body
 {
     display: flex;
 
+    margin-bottom: 5px;
     font-family: Verdana;
     font-weight: 100;
     font-size: 12px;
@@ -223,8 +224,12 @@ body
 
 .patreon_text
 {
+    color: rgb(255, 128, 82);
+}
 
-    color: rgb(255, 114, 62);
+.reddit_text
+{
+    color: rgb(255, 97, 39);
 }
 
 .extras_icon
