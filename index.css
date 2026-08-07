@@ -234,6 +234,11 @@ body
     color: rgb(255, 97, 39);
 }
 
+.letterboxd_text
+{
+    color: #09c028
+}
+
 .extras_icon
 {
     margin-right: 6px;
