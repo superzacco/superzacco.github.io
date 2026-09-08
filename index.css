@@ -169,7 +169,6 @@ body
 {
     display: flex;
 
-    height: 250px;
     padding: 10px;
     
     align-items: stretch;
@@ -264,7 +263,7 @@ body
 
 .featured_creation
 {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .fc_titlebar
@@ -546,4 +545,37 @@ body
 .aliases
 {
     margin: 4px;
+}
+
+
+
+
+
+.latest_video_holder
+{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.latest_video_titlebar
+{
+    display: flex;
+    background-color: rgb(129, 24, 24);
+    color: rgb(238, 93, 93);
+
+    font-family: Bahn;
+    font-size: 20px;
+
+    text-align: left;
+    padding: 10px;
+
+}
+
+.latest_video
+{
+    border: none;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }

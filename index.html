@@ -58,6 +58,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="featured_creation">
                     <div class="fc_titlebar"><a class="featured_text">Featured</a><a class="as_of_txt">as of 8/6/26...</a></div>
                     <div class="fc_box">
@@ -83,6 +84,27 @@
                         </div>    
                     </div>
                 </div>
+
+                <div class="latest_video_holder">
+                    <div class="latest_video_titlebar">Latest Video</div>
+                    <div class="latest_video_box">
+                                        
+                        <p id="loading" class="loading_latest_video">Loading latest video...</p>
+
+                        <iframe
+                            id="latest-video"
+                            class="latest_video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+
+                        <p id="error" class="latest_video_error" style="display: none;">
+                            Couldn't load the latest video.
+                        </p>
+
+                    </div>
+                </div>
+
                 <div class="latest_creations">
                     <div class="lc_titlebox">Latest</div>
                     <!--
@@ -226,5 +248,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="latestytupload.js"></script>
     </body>
 </html>
