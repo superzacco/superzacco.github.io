@@ -443,7 +443,7 @@ body
 
 .rb_text
 {
-    color: white;
+    color: lightgray;
     text-decoration: none;
     font-family: Arial;
     font-size: 16px;
@@ -531,6 +531,7 @@ body
 
 .profile_description
 {
+    color: lightgray;
     font-size: 16px;
     font-weight: 200;
     font-family: Bahn;
