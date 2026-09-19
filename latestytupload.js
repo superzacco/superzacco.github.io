@@ -1,5 +1,6 @@
 
-const API_KEY = "AIzaSyCx0cNptuezbQer0mARYUSozYV_YHBSQk4"; // I'm too lazy kill me
+
+const API_KEY = "AIzaSyCx0cNptuezbQer0mARYUSozYV_YHBSQk4"; // I'm too lazy, kill me!
 const CHANNEL_ID = "UCe-HCl3Mb4c1taGDQrlq5Dw";
 
 
